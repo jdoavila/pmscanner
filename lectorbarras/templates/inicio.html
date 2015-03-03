@@ -15,18 +15,23 @@
   <body>
 
     <div class="container">
-      <center><img src="{{STATIC_URL}}img/logo-paper.jpg"><img src="{{STATIC_URL}}img/logo-megastore.jpg"></center>
-      <h1 class="form-signin-heading">Escanee el código de barras del producto.</h1>
-      <span class="glyphicon glyphicon-barcode"></span>&nbsp;&nbsp;<input type="text" size="60" id="txtBarCode" name="txtBarCode" placeholder="Código de barras" required autofocus>
-      <div class="progress progress-striped active" style="display:none;" id="pbPrincipal">
-        <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-      </div>
+      <center><img src="{{STATIC_URL}}img/logo-paper.jpg"><!-- <img src="{{STATIC_URL}}img/logo-megastore.jpg">--></center>
       <br><br>
-      <div id="nuevosdatos">
-        <div id="resultado">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Lector de codigos de barra de Paper & More Megastore</div>
+        <div class="panel-body">
+          <h1 class="form-signin-heading">Escanee el código de barras del producto.</h1>
+          <span class="glyphicon glyphicon-barcode"></span>&nbsp;&nbsp;<input type="text" size="60" id="txtBarCode" name="txtBarCode" placeholder="Código de barras" required autofocus>
+          <div class="progress progress-striped active" style="display:none;" id="pbPrincipal">
+            <div class="progress-bar"  role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+          </div>
+          <br><br>
+          <div id="nuevosdatos">
+            <div id="resultado">
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
     <script src="{{STATIC_URL}}js/jquery-2.1.0.min.js"></script>
     <script src="{{STATIC_URL}}js/lector.js"></script>
